@@ -32,14 +32,17 @@
  *        Grâce à cela, on pourra faire un suite(250) sans trembler.
  */
 
-function suite(number) {
-
-}
 
 
-
-
-
+    function suite(number) {
+        if(number < 2){
+            return number;
+        }
+        return suite(number -1) + suite(number -2);
+    }
+    
+    console.log(suite(40))
+    
 
 // Stop ! Tests, on ne touche pas :P
 check.exo10(suite);

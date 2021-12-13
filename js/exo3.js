@@ -5,3 +5,18 @@
  *    et si les deux inputs sont remplis, on additionne les deux nombres
  *    et on affiche le résultat dans #result
  */
+let a = document.getElementById('input1')
+let b = document.getElementById('input2')
+
+function calcul(){
+    if ((a.value== null) || (b.value == null)){
+        document.getElementById('result').innerHTML = "En attente de chiffre"
+    }
+    else{
+        
+        result = parseFloat(a.value) + parseFloat(b.value)
+        document.getElementById('result').innerHTML = result
+    }
+}
+
+setInterval(calcul, 500)

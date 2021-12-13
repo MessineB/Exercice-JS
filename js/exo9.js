@@ -12,10 +12,26 @@
 
 
 function sum(arr) {
-
+    let Total=0;
+    let Tempo = 0;
+    if (arr == 0 ){
+        return 0;
+    }
+    else {
+        for (let i=0 ; i< arr.length ; i++) {
+            if (typeof(arr[i]) == 'string' ) {
+                Tempo = 0;
+                Total =  parseInt(Total) + parseInt(Tempo)
+            }
+            else {
+            Tempo =  arr[i] 
+            Total = parseInt(Total) + parseInt(Tempo)
+            }
+            console.log(Total)
+        }
 }
-
-
+return Total
+}
 
 // Stop ! Tests, on ne touche pas :P
 check.exo9(sum);

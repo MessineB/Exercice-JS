@@ -8,9 +8,7 @@
 
 $('#je-suis-ici');
 
-
-
-
+$('#container > div').children().eq(2).text('Challenge réussi !')
 
 // Stop ! Tests, on ne touche pas :P
 check.exo11();

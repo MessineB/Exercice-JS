@@ -11,7 +11,22 @@
  */
 
 function getLongestString(arr) {
-
+    let NombredeLettresmax= 0;
+    let Motlepluslong=0;
+    if ( arr == 0 ) {
+        return false 
+    }
+    else {
+       for (i=0 ; i< arr.length ; i++) {
+           let NombredeLettredei =  arr[i].length;
+           if ( NombredeLettresmax < NombredeLettredei) {
+               NombredeLettresmax = NombredeLettredei ;
+               Motlepluslong=arr[i];
+                
+           }   
+       }   
+    }
+    return Motlepluslong
 }
 
 

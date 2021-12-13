@@ -5,7 +5,10 @@
  */
 
 
-
+$('button').on('click', function changeClass(e){
+    //e.preventDefault()
+    $('#result').removeClass('hidden')
+})
 
 
 

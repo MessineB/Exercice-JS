@@ -3,13 +3,12 @@
  * int est un entier
  * Le doubler, et le retourner
  */
-
-function doubleInt(int) {
-
+let Int;
+function doubleInt(Int) {
+    let doubleInt= parseInt(Int)* parseInt(2);
+    return doubleInt
 }
-
-
-
+doubleInt(Int)
 
 
 
