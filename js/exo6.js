@@ -12,7 +12,6 @@ function isEven(int) {
     else {
         return false
     }
-
 }
 
 isEven(int)

@@ -5,7 +5,18 @@
  *  - la touche entrée compte pour +10
  */
 
+let tt = 0;
 
+$(document).keypress(function(e) {
+
+    if(e.which === 13){
+        tt = tt + 10
+    }
+    else{
+        tt++
+    }
+    return $('#result').text(tt)
+});
 
 
 
