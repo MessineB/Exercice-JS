@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<title>Parcours JavaScript - Test 14</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,500i" rel="stylesheet" />
-	<link rel="stylesheet" href="../css/reset.css" />
 	<link rel="stylesheet" href="../css/base.min.css" />
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
 </head>
 
 <body>
@@ -25,6 +25,13 @@
 				<p>Utiliser le slider de jQuery UI</p>
 			</div>
 		</div>
+		<div class="center">
+		<p>
+			<label for="amount">Fourchette de prix: </label>
+			<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+		</p>
+		<div id="slider-range"></div>
+		</div>
 		<section id="test">
 			<div id="result"></div>
 		</section>
@@ -39,8 +46,9 @@
 		</p>
 		<p>O'clock</p>
 	</footer>
-
-	<script src="../js/jquery.min.js"></script>
+	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- <script src="../js/jquery.min.js"></script> -->
 	<script src="../js/app.js"></script>
 	<script src="../js/exo14.js"></script>
 </body>
